@@ -1,0 +1,15 @@
+{
+  "name": "escola",
+  "version": "1.0.0",
+  "description": "projeto de estudo cujo objetivo é fazer um gerenciador de notas de alunos simples.",
+  "main": "escola.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davi Campolina",
+  "license": "ISC",
+  "dependencies": {
+  "prompt-sync": "^4.2.0"
+
+  }
+}

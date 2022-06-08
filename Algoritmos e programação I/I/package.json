@@ -1,0 +1,14 @@
+{
+  "name": "senac_1",
+  "version": "1.0.0",
+  "description": "estudo_condicionais",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davi Campolina",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

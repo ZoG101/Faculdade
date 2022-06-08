@@ -1,0 +1,2 @@
+<h1 align="center" text-weigth="bold">VI</h1>
+<p>O objetivo era criar um jogo de batalha naval simples para testar os conhecimentos sobre variáveis, laços de repetição, geração de números aleatórios, arredondamento de números e matriz.</p>
