@@ -1,27 +1,35 @@
 class MeuPrimeiroPrograma {
 
-    public static void main(String[] args) {
+    public static int[] ordenarVetor(int[] vetor) {
 
-        int v [] = {2, 5, 7, 9, 10, 8, 92};
+        for (int i = 0; i < vetor.length - 1; i++) {
 
-        for (int i = 0; i < v.length - 1; i++) {
+            for (int j = i + 1; j < vetor.length; j++) {
 
-            for (int j = i + 1; j < v.length; j++) {
+                if (vetor[i] > vetor[j]) {
+                    int aux = vetor[i];
 
-                if (v[i] > v[j]) {
-                    int aux = v[i];
-
-                    v[i] = v[j];
-                    v[j] = aux;
+                    vetor[i] = vetor[j];
+                    vetor[j] = aux;
                 }
 
             }
 
         }
 
+        return vetor;
+
+    }
+
+    public static void main(String[] args) {
+
+        int v [] = {2, 5, 7, 9, 10, 8, 92};
+
+        int[] vetorOrdenado = ordenarVetor(v);
+
         for (int i = 0; i < v.length; i++) {
 
-            System.out.print(v[i] + ", ");
+            System.out.print(vetorOrdenado[i] + ", ");
 
         }
 
