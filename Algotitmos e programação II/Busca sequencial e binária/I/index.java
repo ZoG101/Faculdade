@@ -7,10 +7,12 @@ class MeuPrimeiroPrograma {
             for (int j = i + 1; j < vetor.length; j++) {
 
                 if (vetor[i] > vetor[j]) {
+
                     int aux = vetor[i];
 
                     vetor[i] = vetor[j];
                     vetor[j] = aux;
+                    
                 }
 
             }
