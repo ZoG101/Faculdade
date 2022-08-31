@@ -1,10 +1,17 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/* 
+ * A classe "App" é a classe principal onde existe a inicialização do vetor, inserção dos valores,
+ * menu onde os métodos são chamados, o main, 
+ * e um método chamado "novoVetor" para caso o usuário queira iniciar um novo vetor sem reiniciar o programa.
+*/
 public class App {
 
+    //Inicialização do "Scanner" para input de dados pelo console.
     static Scanner entrada = new Scanner(System.in);
 
+    //Método para reiniciar o vetor.
     public static iniciaVetor novoVetor (iniciaVetor dados) {
 
         String desejo = "n";
@@ -29,6 +36,10 @@ public class App {
 
     }
 
+    /*
+     * Método main onde o primeiro vetor é instanciado, preenchido e onde 
+     * é criado um pequeno e simples menu para o usuário poder manipular o vetor.
+     */
     public static void main(String[] args) {
 
         String menu;
@@ -36,12 +47,16 @@ public class App {
 
         do{
 
+            //Print das opções disponíveis no menu.
             System.out.println("\n1.Criar novo vetor;\n2.Ordenar vetor;\n3.Calcular a diferença entre dois elementos no vetor;\n4.Verificar ordenação do vetor;\n5.Sair.\n");
 
+            //Opção desejada é inserida.
             menu = entrada.nextLine();
 
+            //Switch-Case para verificação da escolha do usuário e chamada dos repectivos métodos.
             switch (menu) {
 
+                //Inicia um novo vetor caso o usuário deseje.
                 case "1":
 
                     try{
@@ -56,6 +71,7 @@ public class App {
 
                 break;
 
+                //Ordena o vetor de forma crescente ou decrescente.
                 case "2":
 
                     try {
@@ -72,6 +88,10 @@ public class App {
 
                 break;
 
+                /*
+                * calcula a maior diferença dentro do vetor
+                * ou a diferença de dois números selecionados pelo usuário por ídice ou por busca do próprio valor.
+                */
                 case "3":
 
                     try {
@@ -86,6 +106,11 @@ public class App {
 
                 break;
 
+                /*
+                 * Verifica se o vetor é ordenado de forma crescente e retor "true" se verdadeiro
+                 * ou "false" caso não seja, também é possível verificar qual a ordenação 
+                 * do vetor você escolheu (apenas caso você tenha ordenado).
+                 */
                 case "4":
 
                     try {
@@ -110,10 +135,13 @@ public class App {
 
 }
 
+//classe para inicializar, preecher e gerenciar o vetor.
 class iniciaVetor {
 
+    //Inicializa um "Scanner" para os menus interno que existem nas funções da classe.
     static Scanner entrada = new Scanner(System.in);
 
+    //inicialização das variáveis de controle e do vetor em si.
     public boolean vetorIniciado = false;
     public boolean ordenadoDeFormaCrescente = false;
     public boolean ordenadoDeFormaDecrescente = false; 
@@ -121,6 +149,7 @@ class iniciaVetor {
     private int capacidade;
     private int tamanho;
 
+    //Construtor principal da classe o vetor é criado com o tamanho determinado palo usuário e preenchido pelo mesmo.
     public iniciaVetor (int n) {
 
         n = criarVetor();
@@ -144,36 +173,48 @@ class iniciaVetor {
 
     }
 
+    /* 
+     * Classe construtora de suporte para caso a primeira falhe 
+     * o vetor ainda poderá ser inicializado com o tamanho padrão de 10 itens.
+    */
     public iniciaVetor () {
 
         this(10);
 
     }
 
-    public int getCapacidade () {
+    //Verificar a capacidade do vetor para obter mais controle.
+    private int getCapacidade () {
 
         return this.capacidade;
 
     }
 
-    public boolean ehCrescente () {
+    //Verifica se o vetor foi ordenado de forma crescente.
+    private boolean ehCrescente () {
 
         return ordenadoDeFormaCrescente;
 
     }
 
-    public boolean ehDecrescente () {
+    //Verifica se o vetor foi ordenado de forma decrescente.
+    private boolean ehDecrescente () {
 
         return ordenadoDeFormaDecrescente;
 
     }
 
+    //Verifica o limite do vetor e retorna se ele está no limite ou não.
     private boolean limite () {
 
         return this.tamanho == this.capacidade;
 
     }
 
+    /*
+     * Verifica se o vetor, independente de ter sido ordenado ou não, é crescente ou não.
+     * E retorna "true" caso seja e "false" caso não seja.
+     */
     private boolean verificaCrescente () {
 
         boolean verificado = false;
@@ -191,6 +232,13 @@ class iniciaVetor {
 
     }
 
+    /*
+     * Calcula a diferença entre dois números no vetor.
+     * O usuário tem algumas formas de fazer isso, ele pode localizar os números no vetor
+     * pelo índice ou por uma busca do próprio valor (o que exige que o vetor tenha passado por ordenação).
+     * Ou o usuário pode calcular a maior diferença dentro do vetor (não necessita de estar ordenado).
+     * Os erros são tratados e bem descritos.
+     */
     public void calculoDeDiferenca () {
 
         int i = 0;
@@ -299,6 +347,14 @@ class iniciaVetor {
 
     }
 
+    /*
+     * Verifica se o vetor é crescente ou decrescente.
+     * Para isso o usuário tem algumas opções, o usuário pode apenas verificar
+     * se o vetor é crescente e obter "true" ou "false" (não necessita de ordenar o vetor);
+     * ou o usuário pode verificar como ele escolheu ordená-lo
+     * e obter uma resposta mais precisa (necesseta de passar pela opção de ordenação).
+     * Aqui as exceções também são tratadas.
+     */
     public void crescenteOuDecrescente () {
 
         System.out.println("\n1.Verificar apenas se é crescente;\n2.Verificar como você o ordenou (necessita ter sido ordenado primeiro).\n");
@@ -347,6 +403,12 @@ class iniciaVetor {
 
     }
 
+    /*
+     * Função responsável por preencher o vetor 
+     * e controlar o limite para que não possa ser
+     * adicionado além do limite do vetor.
+     * Aqui a exceção do limite é tratada também.
+     */
     public void adicionaItem (int numero) {
 
         if (this.limite()) {
@@ -359,6 +421,10 @@ class iniciaVetor {
 
     }
 
+    /*
+     * Função responsável por instanciar o tamanho máximo do vetor
+     * para a sua inicialização.
+     */
     private int criarVetor () {
 
         System.out.println("\nDigite o tamanho do vetor:\n");
@@ -369,6 +435,12 @@ class iniciaVetor {
 
     }
 
+    /*
+     * Função responsável por ordenar o vetor da maneira que o usuário escolher.
+     * Aqui é possível ordenar de forma crescente ou decrescente.
+     * E o vetor é retornado de forma já ordenada.
+     * Também modifica as variáveis de controle para saber como o usuário escolheu ordenar.
+     */
     public int[] ordenar () {
 
         System.out.println("\n1.Ordenar de forma crescente;\n2.Ordenar de forma decrescente;\n");
@@ -412,6 +484,10 @@ class iniciaVetor {
 
 }
 
+/*
+ * Classe de ordenação utilizando o método "quick sort" para ordenar de forma eficiênte.
+ * Neste caso, ele ordena de forma crescente.
+ */
 class quickSortCrescente {
     
     public static void sort (int[] x, int inicio, int fim) {
@@ -453,6 +529,10 @@ class quickSortCrescente {
 
 }
 
+/*
+ * Classe de ordenação utilizando o método "quick sort" para ordenar de forma eficiênte.
+ * Neste caso, ele ordena de forma decrescente.
+ */
 class quickSortDecrescente {
     
     public static void sort (int[] x, int inicio, int fim) {
@@ -494,6 +574,10 @@ class quickSortDecrescente {
 
 }
 
+/*
+ * Classe de busca para buscar os elementos que o usuário quiser dentro do vetor
+ * utilizando o método de busca binária para vetores crescentes.
+ */
 class buscaBinariaCrescenete {
     
     public static int busca (int[] vetor, int valorProcurado) {
@@ -527,6 +611,10 @@ class buscaBinariaCrescenete {
 
 }
 
+/*
+ * Classe de busca para buscar os elementos que o usuário quiser dentro do vetor
+ * utilizando o método de busca binária para vetores decrescentes.
+ */
 class buscaBinariaDecrescente {
     
     public static int busca (int[] vetor, int valorProcurado) {
