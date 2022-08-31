@@ -174,6 +174,23 @@ class iniciaVetor {
 
     }
 
+    private boolean verificaCrescente () {
+
+        boolean verificado = false;
+        int cont = 0;
+
+        for (int i = 0; i < getCapacidade() - 1; i++) {
+
+            if (this.dados[i] <= this.dados[i + 1]) cont++;
+
+        }
+
+        if (cont == getCapacidade() - 1) verificado = true;
+
+        return verificado;
+
+    }
+
     public void calculoDeDiferenca () {
 
         int i = 0;
@@ -181,12 +198,12 @@ class iniciaVetor {
         int y = 0;
         int numeroBuscado = 0;
 
-        System.out.println("\n1.Localizar por índice;\n2.Localizar por valor (Necessita passar por ordenação primeiro).");
+        System.out.println("\n1.Localizar por índice;\n2.Localizar por valor (Necessita passar por ordenação primeiro);\n3.Calcular a maior diferença.\n");
 
         int opcao = entrada.nextInt();
 
-        if ((opcao != 1) && (opcao != 2)) throw new RuntimeException("ERRO: Essa opção não existe. Tente novamente.");
-        if ((!ehCrescente()) && (!ehDecrescente())) throw new RuntimeException("ERRO: O vetor em questão não passou por ordenação. Por favor, primeiro ordene-o e depois tente novamente.");
+        if ((opcao != 1) && (opcao != 2) && (opcao != 3)) throw new RuntimeException("\nERRO: Essa opção não existe. Tente novamente.");
+        if ((opcao == 2) && (!ehCrescente()) && (!ehDecrescente())) throw new RuntimeException("\nERRO: O vetor em questão não passou por ordenação. Por favor, primeiro ordene-o e depois tente novamente.");
 
         switch (opcao) {
 
@@ -198,11 +215,11 @@ class iniciaVetor {
 
                 i = entrada.nextInt();
 
-                if ((i < 0) || (i > (this.capacidade))) throw new RuntimeException("ERRO: O número digitado é negativo ou está fora do limite do vetor que é: " + this.capacidade);
+                if ((i < 0) || (i > (this.capacidade))) throw new RuntimeException("\nERRO: O número digitado é negativo ou está fora do limite do vetor que é: " + this.capacidade);
 
                 x = this.dados[i - 1];
 
-                System.out.println("Digite o segundo número:\n");
+                System.out.println("\nDigite o segundo número:\n");
 
                 i = entrada.nextInt();
 
@@ -216,7 +233,7 @@ class iniciaVetor {
 
                 if (ehCrescente()){
             
-                    System.out.println("Digite o primeiro número:\n");
+                    System.out.println("\nDigite o primeiro número:\n");
 
                     numeroBuscado = entrada.nextInt();
                     i = buscaBinariaCrescenete.busca(this.dados, numeroBuscado);
@@ -225,32 +242,32 @@ class iniciaVetor {
 
                     x = this.dados[i];
 
-                    System.out.println("Digite o segundo número:\n");
+                    System.out.println("\nDigite o segundo número:\n");
 
                     numeroBuscado = entrada.nextInt();
                     i = buscaBinariaCrescenete.busca(this.dados, numeroBuscado);
 
-                    if (i == -1) throw new RuntimeException("ERRO: A busca do segundo número não encontrou o número inserido: " + numeroBuscado);
+                    if (i == -1) throw new RuntimeException("\nERRO: A busca do segundo número não encontrou o número inserido: " + numeroBuscado);
 
                     y = this.dados[i];
 
                 } else if(ehDecrescente()){
 
-                    System.out.println("Digite o primeiro número:\n");
+                    System.out.println("\nDigite o primeiro número:\n");
 
                     numeroBuscado = entrada.nextInt();
                     i = buscaBinariaDecrescente.busca(this.dados, numeroBuscado);
 
-                    if (i == -1) throw new RuntimeException("ERRO: A busca do primeiro número não encontrou o número inserido: " + numeroBuscado);
+                    if (i == -1) throw new RuntimeException("\nERRO: A busca do primeiro número não encontrou o número inserido: " + numeroBuscado);
 
                     x = this.dados[i];
 
-                    System.out.println("Digite o segundo número:\n");
+                    System.out.println("\nDigite o segundo número:\n");
 
                     numeroBuscado = entrada.nextInt();
                     i = buscaBinariaDecrescente.busca(this.dados, numeroBuscado);
 
-                    if (i == -1) throw new RuntimeException("ERRO: A busca do segundo número não encontrou o número inserido: " + numeroBuscado);
+                    if (i == -1) throw new RuntimeException("\nERRO: A busca do segundo número não encontrou o número inserido: " + numeroBuscado);
 
                     y = this.dados[i];
 
@@ -258,25 +275,75 @@ class iniciaVetor {
 
             break;
 
+            case 3:
+
+                if (ehCrescente()) {
+
+                    System.out.println("\nA maior diferença existente dentro do vetor é entre o número " + this.dados[this.capacidade - 1] + " e " + this.dados[0] + " e o cáuculo de sua diferença gera o resultado: " + (this.dados[this.capacidade - 1] - this.dados[0]));
+
+                } else {
+
+                    int[] aux = this.dados;
+
+                    quickSortCrescente.sort(aux, 0, aux.length - 1);
+
+                    System.out.println("\nA maior diferença existente dentro do vetor é entre o número " + aux[this.capacidade - 1] + " e " + aux[0] + " e o cáuculo de sua diferença gera o resultado: " + (aux[this.capacidade - 1] - aux[0]));
+
+                }
+
+            break;
+
         }
 
-        System.out.println("O resutado da diferença entre " + x + " e " + y + " é: " + (x - y));
+        if (opcao != 3) System.out.println("\nO resutado da diferença entre " + x + " e " + y + " é: " + (x - y));
 
     }
 
     public void crescenteOuDecrescente () {
 
-        if ((!this.ehCrescente()) && (!this.ehDecrescente())) throw new RuntimeException("\nERROR: O vetor em questão ainda não passou pela ordenação");
+        System.out.println("\n1.Verificar apenas se é crescente;\n2.Verificar como você o ordenou (necessita ter sido ordenado primeiro).\n");
 
-        if (this.ehCrescente()) {
+        int opcaoOrdem = entrada.nextInt();
 
-            System.out.println("\nO vetor em questão é crescente");
+        if ((opcaoOrdem != 1) && (opcaoOrdem != 2)) throw new RuntimeException("\nERROR: Essa opção não existe. Tente novamente.");
 
-        } else if (this.ehDecrescente()) {
+        switch (opcaoOrdem) {
 
-            System.out.println("\nO vetor em questão é decrescente");
+            case 1:
+
+                boolean validado = verificaCrescente();
+
+                if (validado) {
+
+                    System.out.println("\nA verificação retornou 'true', ou seja, o vetor é crescente.");
+
+                } else {
+
+                    System.out.println("\nA verificação retornou 'false', ou seja, o vetor não é crescente.");
+
+                }
+
+            break;
+
+            case 2:
+
+                if ((!this.ehCrescente()) && (!this.ehDecrescente())) throw new RuntimeException("\nERROR: O vetor em questão ainda não passou pela ordenação");
+
+                if (this.ehCrescente()) {
+
+                    System.out.println("\nO vetor em questão é crescente");
+        
+                } else if (this.ehDecrescente()) {
+        
+                    System.out.println("\nO vetor em questão é decrescente");
+        
+                }
+
+            break;
 
         }
+
+        
 
     }
 
@@ -284,7 +351,7 @@ class iniciaVetor {
 
         if (this.limite()) {
 
-            throw new RuntimeException("ERRO: A unidade de dados está cheia.");
+            throw new RuntimeException("\nERRO: A unidade de dados está cheia.");
 
         }
 
@@ -304,7 +371,7 @@ class iniciaVetor {
 
     public int[] ordenar () {
 
-        System.out.println("\n1.Ordenar de forma crescente;\n2.Ordenar de forma decrescente;");
+        System.out.println("\n1.Ordenar de forma crescente;\n2.Ordenar de forma decrescente;\n");
 
         Integer ordenar = entrada.nextInt();
 
