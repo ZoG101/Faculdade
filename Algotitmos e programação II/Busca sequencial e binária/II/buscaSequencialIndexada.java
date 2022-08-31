@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class buscaSequencial {
+public class buscaSequencialIndexada {
 
     ArrayList<Integer> dados = new ArrayList<>();
     Map<Integer, Integer> mapa = new HashMap<Integer, Integer>();
     Map<Integer, Integer> mapa2 = new HashMap<Integer, Integer>();
 
-    public buscaSequencial(){
+    public buscaSequencialIndexada(){
 
         Random random = new Random();
 
