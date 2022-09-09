@@ -5,7 +5,7 @@ public class buscaBinaria {
         int inicio = 0;  
         int fim = vetor.length - 1;    
 
-        while (inicio < fim) {
+        while (inicio <= fim) {
 
             int meio = (inicio + fim) / 2;
 
