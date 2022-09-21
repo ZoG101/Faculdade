@@ -19,3 +19,17 @@
 - [x] Array (vetores e matrizes);
 - [x] Resolução de problemas e o projeto de algoritmos a partir da análise do problema, desenvolvimento de estratégias de solução, representação, simulação e documentação;
 - [x] Paradigmas de programação.
+
+<h2 align="center" text-weigth="bold">Algoritmos e Programação II</h2>
+
+<p>Apresenta o desenvolvimento de algoritmos, a partir de técnicas de programação interativa e recursiva e do estudo de eficiência de algoritmos. Apresenta os métodos de busca e classificação de dados em memória. Aborda, ainda, o conceito e implementação de vetores e matrizes, estruturas de dados simples: fila, pilha, fila de prioridade e heap. A linguagem utilizada neste módulo foi o java, por ser uma linguagem já bem estabelecida e versátil.</p>
+
+<h3 align="center" text-weigth="bold">Objetivos Gerais da Disciplina:</h3>
+
+- [x] Entender sobre busca sequencial, sequencial indexada e busca binária;
+- [x] Entender sobre recursividade com exemplos práticos;
+- [x] Entender sobre os algoritmos de ordenação simples, como: bubble sort, insertion sort e selection sort;
+- [x] Entender sobre os algoritmos de ordenação sofisticados, como: merge sort e o quick sort;
+- [x] Entender sobre o uso de algoritmos eficientes, BIG-O e como mensurá-los;
+- [x] Compreender a utilização de pilhas, filas e filas de prioridade;
+- [x] Compreender a utilização do heap e árvore binária.
