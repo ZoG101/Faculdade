@@ -6,10 +6,12 @@ public class main {
         int a = 10;             //2 bytes de memória.
         short b = 10;           //4 bytes de memória.
         long c = 200000000L;    //8 bytes de memória (maior de 2BI tem que adicionar o "L").
+        short valorPequeno = 2131; // 16 bits.
+        byte menorAinda = 127; // -128 -> 127.
 
         //Variáveis de números com decimais.
-        double d = 10.0;
-        float e = 10.0f;
+        double d = 10.0; //64 bits.
+        float e = 10.0f; //32 bits.
 
         //Variáveis de texto (string).
         char f = 'A'; //Tem que ser aspas simples ('') para 'char'.
