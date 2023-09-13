@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/public/css/global.css" />
+    <link rel="stylesheet" href="/public/css/normalize.css" />
+    <link rel="stylesheet" href="index.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1> Formulários </h1>
+
+    <fieldset>
+        <legend> Cadastro de Produtos </legend>
+
+        <div>
+            <label> Nome: </label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label> E-mail: </label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label> Profissão: </label>
+            <select>
+                <option> Selecione </option>
+                <option> Dev.</option>
+                <option> Designer</option>
+                <option> Marketing</option>
+            </select>
+        </div>
+
+        <div>
+            <label> Descrição: </label>
+            <textarea></textarea>
+        </div>
+
+        <div>
+            <label> Campo: </label>
+            <input type="text" placeholder="Digite aki" />
+        </div>
+
+        <div>
+            <label> Campo: </label>
+            <div class="opcoes">
+                <input type="checkbox" /> Opcao 1
+                <input type="checkbox" /> Opcao 2
+                <input type="checkbox" /> Opcao 3
+            </div>
+        </div>
+
+        <div>
+            <label> Campo1: </label>
+            <div class="opcoes">
+                <input type="radio" name="campo1" /> Opcao 1
+                <input type="radio" name="campo1" /> Opcao 2
+                <input type="radio" name="campo1" /> Opcao 3
+            </div>
+        </div>
+
+        <div>
+            <label> </label>
+            <button> Salvar </button>
+        </div>
+
+    </fieldset>
+
+    <br />
+    <hr />
+
+    <h1> Tabelas </h1>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>#ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bruno</td>
+                <td>bruno@gmail.com</td>
+                <td>(11) 9999-8888</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bruno</td>
+                <td>bruno@gmail.com</td>
+                <td>(11) 9999-8888</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bruno</td>
+                <td>bruno@gmail.com</td>
+                <td>(11) 9999-8888</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Alunos de recuperação.</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    
+</body>
+</html>

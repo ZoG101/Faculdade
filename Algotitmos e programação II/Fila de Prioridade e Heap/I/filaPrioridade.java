@@ -8,13 +8,13 @@ class App {
 
         try {
 
-            f.enfileira(new Item("roxo", 5));
-            f.enfileira(new Item("roxo", 1));
-            f.enfileira(new Item("roxo", 0));
-            f.enfileira(new Item("roxo", 4));
-            f.enfileira(new Item("roxo", 1));
-            f.enfileira(new Item("roxo", 3));
-            f.enfileira(new Item("roxo", 2));
+            f.enfileira(new Item<>("roxo", 5));
+            f.enfileira(new Item<>("roxo", 1));
+            f.enfileira(new Item<>("roxo", 0));
+            f.enfileira(new Item<>("roxo", 4));
+            f.enfileira(new Item<>("roxo", 1));
+            f.enfileira(new Item<>("roxo", 3));
+            f.enfileira(new Item<>("roxo", 2));
 
         } catch (RuntimeException e) {
 
@@ -22,7 +22,7 @@ class App {
 
         }
 
-        System.out.printf("%s\n\n", f);
+        System.out.printf("%s\n\n", f.toString());
 
         try {
 
@@ -75,7 +75,7 @@ class Item<T> {
 
 public class filaPrioridade {
 
-    private Item[] itens;
+    private Item<?>[] itens;
     private int tamanho;
     private int capacidade;
 
@@ -105,7 +105,7 @@ public class filaPrioridade {
 
     }
 
-    public void enfileira (Item i) {
+    public void enfileira (Item<?> i) {
 
         if (this.capacidade == this.tamanho) {
 
@@ -117,7 +117,7 @@ public class filaPrioridade {
 
     }
 
-    public Item desenfileira () {
+    public Item<?> desenfileira () {
 
         if (this.ehVazia()) {
 
@@ -126,7 +126,7 @@ public class filaPrioridade {
         }
 
         int indice = this.buscaMaiorPrioridade();
-        Item altaPrioridade = this.itens[indice];
+        Item<?> altaPrioridade = this.itens[indice];
 
         for (int i = indice; i < this.tamanho() - 1; i++) {
 

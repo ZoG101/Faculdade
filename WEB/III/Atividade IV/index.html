@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Fomulário</title>
+    </head>
+    <body>
+        <form method="post" action="nomedapagina.php">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o seu nome">
+            <br>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite o seu E-mail">
+            <br>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <br>
+
+            <label for="datanascimento">Data de nascimento</label>
+            <input type="date" id="datanascimento">
+            <br>
+
+            <label for="masculino" name="sexo">Sexo</label>
+            <input type="radio" name="sexo" id="masculino"> masculino
+            <input type="radio" name="sexo" id="feminino"> feminino
+            <br>
+
+            <label for="endereco">Edereço</label>
+            <input type="text" id="endereco">
+            <br>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep">
+            <br>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade">
+            <br>
+
+            <label for="estado">Estado</label>
+            <select id="estado">
+                <option value="NULL">Escolha seu Estado</option>
+                <option value="AC">AC</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+            </select>
+            <br>
+
+            <label for="tamanhocalca">Número da calça</label>
+            <input type="number" id="tamanhocalca">
+            <br>
+
+            <label for="tamanhosapato">Número do calçado</label>
+            <input type="number" id="tamanhosapato">
+            <br>
+
+            <label for="cor1">Escolha a cor</label>
+            <input type="color" id="cor1">
+            <br>
+
+            <label for="cor2">Escolha a cor secundária</label>
+            <input type="color" id="cor2">
+            <br>
+
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" cols="30" rows="10"></textarea>
+            <br>
+
+            <input type="checkbox" id="club"><label for="club">Deseja participar do nosso club?</label>
+            <input type="checkbox" id="copinho"><label for="copinho">Deseja o nome no copinho?</label>
+            <br>
+
+            <input type="hidden" id="origem" value="Cliente cadastrado pelo parceiro">
+            <br>
+
+            <input type="submit" id="enviar" value="Confirmar">
+            <input type="reset" id="limpar" value="Limpar">
+
+            <label for="botaovoltar"></label>
+            <button id="botaovoltar"><a href="pag-ant">Voltar</a></button>
+        </form>
+    </body>
+</html>

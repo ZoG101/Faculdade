@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +34,7 @@ class Item<T> {
 
 public class filaPrioridadeHeap {
     
-    private List<Item> itens = new ArrayList<Item>();
+    private List<Item<?>> itens = new ArrayList<Item<?>>();
 
     public int tamanho () {
 
@@ -112,7 +111,7 @@ public class filaPrioridadeHeap {
 
     private void swap (int a, int b) {
 
-        Item temp = this.itens.get(a);
+        Item<?> temp = this.itens.get(a);
 
         this.itens.set(a, this.itens.get(b));
         this.itens.set(b, temp);

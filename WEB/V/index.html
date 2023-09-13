@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fill=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Cocina del Jef</title>
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center">
+            <h1 class="display-3">Cocina del Jef</h1>
+            <p>Delivery de comida brasileira em São Paulo</p>
+            <p>Para imprimir nossas receitas tecle <kbd>Ctrl+P</kbd></p>
+            <mark>Peça pelo app</mark>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Pratos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Serviços</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Recomendação</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGUslA0RdpM3knhDCuTIVJI6cwEodzRFY2g&usqp=CAU" class=".img-thumbnail">
+                    <p>Nome do prato</p>
+                    <p>Texto descrevendo os itens do prato, acompanhamento, bebida...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Recomendação</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0HFc63IsRogxMC4uiR5p0x7x_Pbrza-kR5A&usqp=CAU" class=".img-thumbnail">
+                    <p>Nome do prato</p>
+                    <p>Texto descrevendo os itens do prato, acompanhamento, bebida...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Recomendação</h3>
+                    <img src="data:image/jpeg;base64,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" class=".img-thumbnail">
+                    <p>Nome do prato</p>
+                    <p>Texto descrevendo os itens do prato, acompanhamento, bebida...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table table-light table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Protínas</th>
+                        <th>Carboidratos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alimento</td>
+                        <td>Proteina</td>
+                        <td>Carboidrato</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>Alimento</td>
+                        <td>Proteina</td>
+                        <td>Carboidrato</td>
+                    </tr>
+                    <tr>
+                        <td>Alimento</td>
+                        <td>Proteina</td>
+                        <td>Carboidrato</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <ul class="list-group">
+                <li class="list-group-item">Prato 1</li>
+                <li class="list-group-item list-group-item-action">Prato 2 (escolha do dia)</li>
+                <li class="list-group-item">Prato 3</li>
+            </ul>
+        </div>
+        <div class="container">
+            <form action="envio.php" class="was-validated">
+                <div class="form-group">
+                    <label for="cliente" class="d-sm-block">Nome</label>
+                    <input type="text" class="form-control" name="cliente" placeholder="Digite seu nome" required aria-required="true">
+                    <div class="valid-feedback">Tudo certo!</div>
+                    <div class="invalid-feedback">Ops!</div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="d-sm-block">E-mail</label>
+                    <input type="email" class="form-control" name="email" placeholder="Digite seu E-mail" required aria-required="true">
+                    <div class="valid-feedback">Tudo certo!</div>
+                    <div class="invalid-feedback">Ops!</div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="pedido" cols="30" rows="10" placeholder="Digite seu pedido" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary btn-lg">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Carregando...
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

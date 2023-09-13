@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mnuMassas").click(function(){
+                $("h1").html("Massas");
+                $("#descricao").html("<p>Lista com opções de massas com molho branco.</p>");
+            });
+        });
+    </script>
+    <title>JQuery</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main role="main">
+        <a id="mnuMassas" href="#">Massas</a>
+        <a id="mnuCarnes" href="#">Carnes</a>
+        <a id="mnuBebidas" href="#">Bebidas</a>
+        <a id="mnuSaladas" href="#">Saladas</a>
+
+        <h1>Cardápio</h1>
+        <div id="descricao">
+            O melhor da comida típica brasileira.
+        </div>
+    </main>
+</body>
+</html>

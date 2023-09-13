@@ -1,0 +1,165 @@
+header, footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color: black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+}
+
+body .container {
+    margin: 10px auto;
+}
+
+#title{
+    align-items: center;
+    font-size: 3rem;
+    margin: auto;
+}
+
+.container{
+    margin: 20px auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    color: black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+    font-size: 1rem;
+    margin: auto;
+    padding: 20px;
+}
+
+.missao{
+    margin-top: 10px;
+}
+
+.missao ul{
+    list-style:none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#nossoTrabalhoTitle{
+    margin: 50px;
+    font-size: 30px;
+}
+
+.box {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    color: black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+    padding: 20px;
+}
+
+.card-contato{
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 25px auto;
+    color: black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+}
+
+.card img:hover {
+    opacity: 0.5;
+}
+
+.card img:active {
+    opacity: 0.7;
+}
+
+.container h2{
+    text-align: center;
+    margin-top:10px;
+}
+
+.container p{
+    text-align: left;
+    margin-top:10px;
+}
+
+#contatoTitle{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.input{
+    border-radius: 72px;
+    background: #e0e0e0;
+    box-shadow: inset 35px 35px 70px #b5b5b5,
+                inset -35px -35px 70px #ffffff;
+}
+
+#enviar{
+    margin-top: 20px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 36px 36px 72px #bebebe,
+                inset -36px -36px 72px #ffffff;
+}
+
+#rodapeMarca{
+    width: 50%;
+    font-size: 1rem;
+    margin: auto 60px;
+}
+
+#rodapeMarca span{
+    font-size: 1rem;
+    margin: auto 5px;
+}
+
+#outros{
+    width: 50%;
+    font-size: 1rem;
+    margin: auto 60px;
+}
+
+#outros a {
+    margin: 0 0 0 65%; 
+}
+
+#outros img{
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}

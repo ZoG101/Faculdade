@@ -1,2 +1,0 @@
-<h1 align="center" font-weigth="bold">IV</h1>
-<p>Exemplo de um jogo simples de tentar acertar um número aleatório para continuar os estudos com laços de repetição, condições, tomadas de decisão simples e iniciar o estudo com funções.</p>

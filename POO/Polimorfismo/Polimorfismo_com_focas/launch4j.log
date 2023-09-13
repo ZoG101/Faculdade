@@ -1,0 +1,22 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\Davi Campolina\Documents\Workspace\senac\POO\Polimorfismo\Polimorfismo_com_focas\foca0.1.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\Davi Campolina\Documents\Workspace\senac\POO\Polimorfismo\Polimorfismo_com_focas\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\UNIVALI\Portugol Studio;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Users\Davi Campolina\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Davi Campolina\AppData\Local\Programs\Python\Python310\;C:\Users\Davi Campolina\AppData\Local\Microsoft\WindowsApps;C:\Users\Davi Campolina\.dotnet\tools;C:\Users\Davi Campolina\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Davi Campolina\AppData\Roaming\npm;C:\Users\Davi Campolina\AppData\Local\Programs\mongosh\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin
+JRE paths:	;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\UNIVALI\Portugol Studio;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Users\Davi Campolina\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Davi Campolina\AppData\Local\Programs\Python\Python310\;C:\Users\Davi Campolina\AppData\Local\Microsoft\WindowsApps;C:\Users\Davi Campolina\.dotnet\tools;C:\Users\Davi Campolina\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Davi Campolina\AppData\Roaming\npm;C:\Users\Davi Campolina\AppData\Local\Programs\mongosh\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin\javaw.exe (OK)
+Version string: 1.011.000_012 / 64-Bit (OK)
+Launcher:	C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin\javaw.exe
+Launcher args:	-jar "C:\Users\Davi Campolina\Documents\Workspace\senac\POO\Polimorfismo\Polimorfismo_com_focas\foca0.1.exe"
+Args length:	108/32768 chars
+Exit code:	0

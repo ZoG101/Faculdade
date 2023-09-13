@@ -1,0 +1,14 @@
+#album{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 500px;
+    align-content: space-between;
+    justify-content: space-between;
+    border: solid 1px #000000;
+    margin: 0 auto;
+}
+
+#album img {
+    width: 200px;
+}

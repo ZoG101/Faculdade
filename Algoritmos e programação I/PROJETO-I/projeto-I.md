@@ -1,2 +1,2 @@
-<h1 align="center" text-weigth="bold">PROJETO-I</h1>
+<h1 align="center" text-weight="bold">PROJETO-I</h1>
 <p>Este pequeno projeto tem como objetivo utilizar uma grande parte de tudo que eu aprendi, como array (vetores e matrizes), declaração de variaveis e constantes, varredura de arrays, preencimento de arrays com dados, solicitara dados para o usuário, tomadas de decisão simples, laços de repetição e, manipulação de variáveis (programação assertiva) e, criação e utilização de funções. O progama consiste em uma geração e cálculo de um boletim escolar.</p>

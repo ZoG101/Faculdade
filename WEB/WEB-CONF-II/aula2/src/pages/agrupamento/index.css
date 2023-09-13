@@ -1,0 +1,42 @@
+
+
+.card-batman {
+    display: inline-block;
+    width: 300px;
+    margin: 10px 20px;
+    
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.card-batman .info {
+    padding: 20px;
+}
+
+.card-batman .info h1 {
+    margin: 0px;
+}
+
+.card-batman .info p {
+    margin: 0px;
+}
+
+.card-batman img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.caixa {
+    background-color: blueviolet;
+    
+    height: 200px;
+    width: 150px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}

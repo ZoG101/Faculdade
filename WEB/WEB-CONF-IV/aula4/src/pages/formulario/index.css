@@ -1,0 +1,68 @@
+body {
+    padding: 50px;
+}
+
+
+fieldset > div {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+fieldset > div label {
+    display: inline-block;
+    min-width: 140px;
+    text-align: right;
+    margin-right: 10px;
+
+    position: relative;
+    top: 12px;
+}
+
+fieldset > div input,select,textarea {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.opcoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.opcoes input,select,textarea {
+    width: auto;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-spacing: 0px 10px;
+}
+
+th,td {
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+tr td:first-child {
+    border-left: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+tr td:last-child {
+    border-right: 1px solid #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+

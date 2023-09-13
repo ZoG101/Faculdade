@@ -1,0 +1,34 @@
+
+body {
+    padding: 50px;
+}
+
+
+.container {
+    background-color: cornflowerblue;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* flex-wrap: wrap; 
+     * align-content: flex-start;  
+    */
+}
+
+
+
+.container p {
+    background-color: blueviolet;
+    padding: 15px;
+    color: #fff;
+}
+
+.aumentar{
+    align-self: center;
+}
